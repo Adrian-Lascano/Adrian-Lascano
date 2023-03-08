@@ -162,6 +162,7 @@ h1{
 	float: left;
 	border-radius: 15px;
 	animation: img1 1.5s ease forwards;
+	pointer-events: none;
 }
 #img2{
 	width: auto;
@@ -172,6 +173,7 @@ h1{
 	top: 30%;
 	right: 20%;
 	animation: img2 1.5s ease forwards;
+	pointer-events: none;
 }
 #img{
 	height: 60%;

@@ -4,6 +4,7 @@ body{
 	background-attachment: fixed;
 	background-size: cover;
 	overflow-x: hidden;
+	user-select: none;
 }
 .topnav{
 	background-color: #142024;
@@ -129,6 +130,7 @@ h1{
 	float: left;
 	border-radius: 15px;
 	animation: img1 1.5s ease forwards;
+	pointer-events: none;
 }
 #img2{
 	width: auto;
@@ -139,6 +141,7 @@ h1{
 	top: 30%;
 	right: 20%;
 	animation: img2 1.5s ease forwards;
+	pointer-events: none;
 }
 #img{
 	position: absolute;
@@ -158,7 +161,6 @@ h1{
 @media only screen and (max-width: 750px) {
 	h1{
 		text-align: center;
-		font-size: 40px;
 		top: 18%;
 		left: 13%;
 	}

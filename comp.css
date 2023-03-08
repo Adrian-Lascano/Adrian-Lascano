@@ -4,6 +4,8 @@ body{
 	background-attachment: fixed;
 	background-size: cover;
 	overflow-x: hidden;
+  overflow-y: hidden;
+  user-select: none;
 }
 .topnav{
 	background-color: #142024;
@@ -19,12 +21,12 @@ body{
 	display: block;
 }
 .topnav a {
-  	float: left;
+  float: left;
  	display: block;
  	color: #f2f2f2;
  	text-align: center;
-  	padding: 14px 16px;
-  	text-decoration: none;
+  padding: 14px 16px;
+  text-decoration: none;
  	font-size: 20px;
  	margin-left: auto;
 }
@@ -82,24 +84,73 @@ body{
 a:hover{
 	color: #d4d4d4;
 }
-.pictureleft{
-
-}
-.textname{
-  float: right;
+#hmbttn{
+  max-height: 50px;
+  position: absolute;
+  right: 5.5%;
+  bottom: 3%;
 }
 #img1{
- width: auto;
-  height: 100%;
+  width: auto;
+  height: 30%;
+  border-radius: 15px;
+  animation: img1 1.5s ease forwards;
+  pointer-events: none;
 }
 #img2{
   width: auto;
-  height: 100%;
-  top: 0%;
+  height: 40%;
+  float: right;
+  position: absolute;
+  border-radius: 15px;
+  top: 22%;
+  left: 15%;
+  animation: img2 1.5s ease forwards;
+  pointer-events: none;
+}
+.picsss{
+  float: left;
+  position: absolute;
+  user-select: none;
+  left: 10%;
+  width: 1000px;
+  height: 1000px;
+}
+.textname{
+  float: right;
+  position: absolute;
+  right: 5%;
 }
 h1{
-  color: whitesmoke;
+  color: white;
+  text-shadow: 3px 3px 1px #21ad99;
   font-size: 3vw;
-  -webkit-text-stroke-color: black;
-  -webkit-text-stroke-width: 1px;
+  font-family: Bold Italic;
+  animation-duration: 2.5s;
+  animation: up 2s ease backwards;
+}
+@keyframes up{
+  0%{color: transparent; text-shadow: none;}
+  100%{transform: translateY(0%);}
+}
+@keyframes img1{
+  50%{transform: translateX(-5%) translateY(-3%);}
+  100%{transform: translateX(0%);}
+}
+@keyframes img2{
+  50%{transform: translateX(5%) translateY(3%);}
+  100%{transform: translateX(0%);}
+}
+#textt{
+  font-size: 2vw;
+  margin-top: 2%;
+}
+#FB{
+  color: white;
+  text-shadow: 3px 3px 1px #21ad99;
+  font-size: 3vw;
+  font-family: Bold Italic;
+  text-decoration: none;
+  animation-duration: 2.5s;
+  animation: up 2s ease backwards;
 }
