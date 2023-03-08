@@ -1,0 +1,126 @@
+body{
+	background-image: linear-gradient(to bottom right, #88becf, #218581, #147285, #0b3542);
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+	overflow-x: hidden;
+}
+.topnav{
+	background-color: #142024;
+	margin-top: -38px;
+	margin-left: -10px;
+	width: 105%;
+	font-size: 25px;
+	height: 50%;
+	color: white;
+	text-decoration: none;
+	text-shadow: 2px 2px 8px grey;
+	overflow: hidden;
+}
+.topnav a {
+  	float: left;
+ 	display: block;
+ 	color: #f2f2f2;
+ 	text-align: center;
+  	padding: 14px 16px;
+  	text-decoration: none;
+ 	font-size: 20px;
+ 	margin-left: auto;
+}
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+.topnav a.active {
+  background-color: #04AA6D;
+  color: white;
+}
+.topnav .icon {
+  display: none;
+}
+.sidenav {
+  height: 90%;
+  width: 0%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #0f6194;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+  border-radius: 5px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  font-family: Bold Italic;
+  display: block;
+  transition: 0.3s;
+  text-shadow: 3px 3px 8px black;
+  color: white;
+}
+
+.sidenav a:hover {
+  color: darkgray;
+}
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  font-size: 36px;
+  margin-left: 1px;
+  color: white;
+}
+.dedication{
+	color: white;
+	background-color: #d4d4d4;
+	
+}
+#first{
+	color: white;
+	text-decoration: none;
+	text-shadow: 2px 2px 8px grey;
+}
+a:hover{
+	color: #d4d4d4;
+}
+#back{
+	color: white;
+	font-size: 50px;
+	text-decoration: none;
+	float: right;
+	position: absolute;
+	right: 2%;
+}
+#back:hover{
+	color: #d1d1d1;
+}
+h1{
+	color: white;
+	text-shadow: 3px 3px 1px #21ad99;
+	top: 10%;
+	letter-spacing: 3px;
+	font-size: 5vw;
+	font-family: Bold Italic;
+	animation-duration: 2.5s;
+	position: absolute;
+	left: 3%;
+	animation: up 2s ease backwards;
+}
+@keyframes up{
+	0%{color: transparent; text-shadow: none;}
+	100%{transform: translateY(0%);}
+}
+@media only screen and (max-width: 750px) {
+	.sidenav a{
+		font-size: 20px;
+	}
+}
+#hmbttn{
+	max-height: 50px;
+	position: absolute;
+	right: 5.5%;
+	bottom: 3%;
+}

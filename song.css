@@ -1,0 +1,197 @@
+body{
+	background-image: linear-gradient(to bottom right, #88becf, #218581, #147285, #0b3542);
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+	overflow-x: hidden;
+}
+.topnav{
+	background-color: #142024;
+	margin-top: -38px;
+	margin-left: -10px;
+	width: 105%;
+	font-size: 25px;
+	height: 50%;
+	color: white;
+	text-decoration: none;
+	text-shadow: 2px 2px 8px grey;
+	overflow: hidden;
+	display: block;
+}
+.topnav a {
+  	float: left;
+ 	display: block;
+ 	color: #f2f2f2;
+ 	text-align: center;
+  	padding: 14px 16px;
+  	text-decoration: none;
+ 	font-size: 20px;
+ 	margin-left: auto;
+}
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+.topnav a.active {
+  background-color: #04AA6D;
+  color: white;
+}
+.topnav .icon {
+  display: none;
+}
+.sidenav {
+  height: 90%;
+  width: 0%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #0f6194;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+  border-radius: 5px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  font-family: Bold Italic;
+  display: block;
+  transition: 0.3s;
+  text-shadow: 3px 3px 8px black;
+  color: white;
+}
+
+.sidenav a:hover {
+  color: darkgray;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  font-size: 36px;
+  margin-left: 1px;
+  color: white;
+}
+#first{
+	color: white;
+	text-decoration: none;
+	text-shadow: 2px 2px 8px grey;
+}
+a:hover{
+	color: #d4d4d4;
+}
+@keyframes h1{
+	0%{transform: translatey(10px); color: transparent; text-shadow: none;}
+	20%{color: transparent; text-shadow: none;}
+	50%{color: transparent; text-shadow: none;}
+	100%{transform: translateY(15%);}
+}
+@keyframes text{
+	0%{transform: translateY(-100px); color: transparent; text-shadow: none;}
+	20%{color: transparent; text-shadow: none;}
+	45%{letter-spacing: -0.1px;}
+	100%{transform: translateY(15%);}
+}
+h1{
+	color: white;
+	text-shadow: 3px 3px 1px #21ad99;
+	margin-left: 12%;
+	margin-top: -20px;
+	letter-spacing: 3px;
+	font-size: 5vw;
+	font-family: Bold Italic;
+	animation-duration: 2.5s;
+	animation: h1 1.5s ease forwards;
+	position: absolute;
+	user-select: none;
+}
+.text{
+	color: #e0e0e0;
+	text-shadow: 1px 1px 1px dimgray;
+	font-size: 1.5vw;
+	font-family: sans-serif;
+	font-weight: bold;
+	text-align: center;
+	margin-left: -1.5%;
+	top: 45%;
+	width: 65%;
+	letter-spacing: 1.5px;
+	position: absolute;
+	animation: text 2s ease forwards;
+	user-select: none;
+}
+#img1{
+	width: auto;
+	height: 90%;
+	float: left;
+	border-radius: 15px;
+	animation: img1 1.5s ease forwards;
+}
+#img2{
+	width: auto;
+	height: 90%;
+	float: right;
+	position: absolute;
+	border-radius: 15px;
+	top: 30%;
+	right: 20%;
+	animation: img2 1.5s ease forwards;
+}
+#img{
+	position: absolute;
+	height: 60%;
+	width: 35%;
+	right: 0px;
+	top: 100px;
+}
+@keyframes img1{
+	50%{transform: translateX(-5%) translateY(-3%);}
+	100%{transform: translateX(0%);}
+}
+@keyframes img2{
+	50%{transform: translateX(5%) translateY(3%);}
+	100%{transform: translateX(0%);}
+}
+@media only screen and (max-width: 750px) {
+	h1{
+		text-align: center;
+		font-size: 40px;
+		top: 18%;
+		left: 13%;
+	}
+	.text{
+		text-align: center;
+		font-size: 15px;
+		top: 35%;
+		left: 15%;
+		width: 80%;
+	}
+	#img{
+		position: absolute;
+		top: 60%;
+		left: 15%;
+		width: 90%;
+		height: 35%;
+	}
+	#img1{
+		width: auto;
+		height: 100%;
+	}
+	#img2{
+		width: auto;
+		height: 100%;
+		top: 0%;
+	}
+	.sidenav a{
+		font-size: 20px;
+	}
+}
+#hmbttn{
+	max-height: 50px;
+	position: absolute;
+	right: 5.5%;
+	bottom: 3%;
+}
