@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Composer: Adrian Lascano</title>
+	<link rel="stylesheet" type="text/css" href="comp.css">
+</head>
+<body>
+
+<nav id="navigation" class="sidenav">
+	<a href="javascript:void(0)" class="closebtn" onclick="closeNav()" style="font-size: 45px;"><b>&times;</b></a>
+	<a href="Mahal Kita.html"><p class="Mahal">Mahal Kita</p></a>
+	<a href="#"><p class="Pangalan">Pangalan</p></a>
+	<a href="#"><p class="Kumikinang">Kumikinang</p></a><br>
+	<a href="#"><p class="Tala">Tala</p></a>
+
+	<a href="#"><img src="Home.png" id="hmbttn"></a>
+</nav>
+
+<div class="topnav" id="myTopnav">
+ 	<p>
+ 	<b>
+ 	<a><span id="2nav" style="cursor:pointer" onclick="openNav()">Songs</span></a>
+ 	<a href="Composer.html" id="first">Composer</a>
+ 	<a href="Dedication.html" id="first">Dedication</a>
+  	<br>
+  	</b>
+  	</p>
+</div><br><br><br>
+
+<div>
+	<img src="guitar.jpg" id="img1"><img src="Adrian.jpg" id="img2">
+</div>
+<div class="textname"><h1>
+	Adrian George Andres Bañadera Lascano
+</div></h1>
+
+<script>
+
+  //Navigation
+function openNav() {
+  document.getElementById("navigation").style.width = "250px";
+}
+
+function closeNav() {
+  document.getElementById("navigation").style.width = "0";
+}
+
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+</script>
+</body>
+</html>
