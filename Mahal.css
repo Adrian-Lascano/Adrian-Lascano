@@ -16,6 +16,7 @@ body{
 	text-decoration: none;
 	text-shadow: 2px 2px 8px grey;
 	overflow: hidden;
+	display: block;
 }
 .topnav a {
   	float: left;
@@ -78,6 +79,9 @@ body{
 	color: white;
 	text-decoration: none;
 	text-shadow: 2px 2px 8px grey;
+}
+a:hover{
+	color: #d4d4d4;
 }
 #hmbttn{
 	max-height: 50px;
