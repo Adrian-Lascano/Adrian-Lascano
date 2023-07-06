@@ -147,7 +147,9 @@ h1{
 	100%{transform: translateY(1%);}
 }
 #space{
-	margin-top: -4%;
+	margin-top: -2.5%;
+	font-weight: 500;
+	color: #1a1a1a;
 }
 #indicator{
 	color: white;
