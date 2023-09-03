@@ -10,12 +10,21 @@
 
 <nav id="navigation" class="sidenav">
 	<a href="javascript:void(0)" class="closebtn" onclick="closeNav()" style="font-size: 45px;"><b>&times;</b></a>
-	<a href="Mahal Kita.html"><p class="Mahal">Mahal Kita</p></a>
-	<a href="#"><p class="Pangalan">Pangalan</p></a>
-	<a href="#"><p class="Kumikinang">Kumikinang</p></a><br>
-	<a href="#"><p class="Tala">Tala</p></a>
-
-	<a href="Songs Home Page.html"><img src="Home.png" id="hmbttn"></a>
+	<input type="text" id="mySearch" onkeyup="myFunction()" placeholder="Search.." title="Type in a category">
+	    <ul id="myMenu">
+		      <li><a href="176.html"><p class="176">176 Days</p></a></li>
+		      <li><a href="AFilipino.html"><p class="AFilipino">Asignaturang Filipino</p></a></li>
+		      <li><a href="Bahay-Bahayan.html"><p class="Bahay">Bahay-Bahayan</p></a></li>
+		      <li><a href="Dinatayo.html"><p class="DNT">Di na TAYO</p></a></li>
+		      <li><a href="ILYSM.html"><p class="ilysm">ILYSM</p></a></li>
+		      <li><a href="KNKP.html"><p class="knkp">Kahit Na, Kahit Pa</p></a></li>
+		      <li><a href="Kumikinang.html"><p class="Kumikinang">Kumikinang</p></a></li>
+		      <li><a href="Mahal Kita.html"><p class="Mahal">Mahal Kita</p></a></li>
+		      <li><a href="Pangalan.html"><p class="Pangalan">Pangalan</p></a></li>
+		      <li><a href="Poster.html"><p class="poster">Poster</p></a></li>
+		      <li><a href="Tala.html"><p class="Tala">Tala</p></a></li>
+	    </ul>
+	<a href="index.html"><img src="Home.png" id="hmbttn"></a>
 </nav>
 
 <div class="topnav" id="myTopnav">
@@ -29,7 +38,11 @@
   	</p>
 </div>
 		<h1>Dedication</h1>
-		<h2 class="texth2">This is all dedicated for different people I have encountered in my life. Different songs for different person that I know, especially the love songs.</h2>
+		<h2 class="texth2">
+		&nbsp&nbsp&nbsp As I was inspired from time to time, I thought of creating songs to express what I feel. I create different songs and it takes hours, days or months to finish since it is dependent to what I am feeling.
+			<br><br>
+		&nbsp&nbsp This is all dedicated for different people I have encountered in my life. Different songs for different person that I know, especially the love songs.
+		</h2>
 <script>
 
   //Navigation
@@ -47,6 +60,22 @@ function myFunction() {
     x.className += " responsive";
   } else {
     x.className = "topnav";
+  }
+}
+
+function myFunction() {
+  var input, filter, ul, li, a, i;
+  input = document.getElementById("mySearch");
+  filter = input.value.toUpperCase();
+  ul = document.getElementById("myMenu");
+  li = ul.getElementsByTagName("li");
+  for (i = 0; i < li.length; i++) {
+    a = li[i].getElementsByTagName("a")[0];
+    if (a.innerHTML.toUpperCase().indexOf(filter) > -1) {
+      li[i].style.display = "";
+    } else {
+      li[i].style.display = "none";
+    }
   }
 }
 </script>
