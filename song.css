@@ -188,7 +188,7 @@ h1{
 	50%{transform: translateX(5%) translateY(3%);}
 	100%{transform: translateX(0%); opacity: 1;}
 }
-@media only screen and (max-width: 80px) {
+@media only screen and (max-width: 400px) {
 	body{
 		overflow: hidden;
 	}
