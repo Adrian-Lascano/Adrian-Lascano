@@ -248,6 +248,31 @@ h1{
 		font-size: 20px;
 	}
 }
+@media only screen and (max-width: 1400px) {
+	body{
+		overflow: hidden;
+	}
+	h1{
+		font-size: 5.5vw;
+		
+	}
+	.text{
+		font-size: 4.5vw;
+		top: 40%;
+	}
+	#intro{
+	}
+	#img{	
+	}
+	#img1{
+	}
+	#img2{
+	}
+	.closebtn{
+		font-size: 40px;
+		left: -5%;
+	}
+}
 #hmbttn{
 	max-height: 50px;
 	margin-bottom: 30%;
