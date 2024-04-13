@@ -248,7 +248,7 @@ h1{
 		font-size: 20px;
 	}
 }
-@media only screen and (min-width: 600px) {
+@media only screen and (min-width: 600px; max-width: 1400px;) {
 	body{
 		overflow: hidden;
 	}
@@ -257,7 +257,7 @@ h1{
 		
 	}
 	.text{
-		font-size: 4.5vw;
+		font-size: 3.5vw;
 		top: 40%;
 	}
 	#intro{
