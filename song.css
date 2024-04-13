@@ -199,12 +199,11 @@ h1{
 		left: 3%;
 	}
 	#welc{
-		font-size: 6vw;
 	}
 	.text{
 		text-align: center;
-		font-size: 15px;
-		top: 15%;
+		font-size: 10px;
+		top: 0%;
 		left: 13%;
 		width: 80%;
 	}
@@ -261,8 +260,9 @@ h1{
 		
 	}
 	.text{
-		font-size: 30px;
+		font-size: 25px;
 		top: 40%;
+		left: 10%
 	}
 	#intro{
 	}
