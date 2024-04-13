@@ -188,7 +188,7 @@ h1{
 	50%{transform: translateX(5%) translateY(3%);}
 	100%{transform: translateX(0%); opacity: 1;}
 }
-@media only screen and (max-width: 200px) {
+@media only screen and (max-width: 300px) {
 	body{
 		overflow: hidden;
 	}
@@ -257,11 +257,11 @@ h1{
 		overflow: hidden;
 	}
 	h1{
-		font-size: 10vw;
+		font-size: 6vw;
 		
 	}
 	.text{
-		font-size: 30px;
+		font-size: 4.5vw;
 		top: 40%;
 	}
 	#intro{
