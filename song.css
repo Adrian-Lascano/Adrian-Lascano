@@ -188,6 +188,33 @@ h1{
 	50%{transform: translateX(5%) translateY(3%);}
 	100%{transform: translateX(0%); opacity: 1;}
 }
+@media only screen and (max-width: 1400px) {
+	body{
+		overflow: hidden;
+	}
+	h1{
+		font-size: 6vw;
+		
+	}
+	.text{
+		font-size: 20px;
+		color: pink;
+		top: 40%;
+		left: 5%;
+	}
+	#intro{
+	}
+	#img{	
+	}
+	#img1{
+	}
+	#img2{
+	}
+	.closebtn{
+		font-size: 40px;
+		left: -10%;
+	}
+}
 @media only screen and (max-width: 500px) {
 	body{
 		overflow: hidden;
@@ -249,60 +276,6 @@ h1{
 	}
 	.closebtn{
 		font-size: 35px;
-		left: -10%;
-	}
-}
-@media only screen and (max-width: 1400px) {
-	body{
-		overflow: hidden;
-	}
-	h1{
-		font-size: 6vw;
-		
-	}
-	.text{
-		font-size: 20px;
-		color: pink;
-		top: 40%;
-		left: 5%;
-	}
-	#intro{
-	}
-	#img{	
-	}
-	#img1{
-	}
-	#img2{
-	}
-	.closebtn{
-		font-size: 40px;
-		left: -10%;
-	}
-}
-@media only screen and (min-width: 700px) {
-	body{
-		overflow: hidden;
-	}
-	h1{
-		font-size: 6vw;
-		
-	}
-	.text{
-		font-size: 20px;
-		color: pink;
-		top: 40%;
-		left: 5%;
-	}
-	#intro{
-	}
-	#img{	
-	}
-	#img1{
-	}
-	#img2{
-	}
-	.closebtn{
-		font-size: 40px;
 		left: -10%;
 	}
 }
