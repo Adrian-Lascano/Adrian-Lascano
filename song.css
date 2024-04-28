@@ -188,99 +188,111 @@ h1{
 	50%{transform: translateX(5%) translateY(3%);}
 	100%{transform: translateX(0%); opacity: 1;}
 }
-@media only screen and (max-width: 1400px) {
-	body{
-		overflow: hidden;
-	}
-	h1{
-		font-size: 6vw;
-		
-	}
-	.text{
-		font-size: 20px;
-		color: pink;
-		top: 40%;
-		left: 5%;
-	}
-	#intro{
-	}
-	#img{	
-	}
-	#img1{
-	}
-	#img2{
-	}
-	.closebtn{
-		font-size: 40px;
-		left: -10%;
-	}
-}
-@media only screen and (max-width: 500px) {
-	body{
-		overflow: hidden;
-	}
-	h1{
-		text-align: center;
-		top: 15%;
-		font-size: 10vw;
-		left: 3%;
-	}
-	#welc{
-	}
-	.text{
-		text-align: center;
-		font-size: 10px;
-		top: 0%;
-		left: 13%;
-		width: 80%;
-		color: black;
-	}
-	#intro{
-		margin-top: -5%;
-	}
-	#img{
-		position: absolute;
-		top: 60%;
-		left: 15%;
-		width: 90%;
-		height: 35%;
-	}
-	#img1{
-		width: auto;
-		height: 80%;
-		display: block;
-		position: absolute;
-		top: -10%;
-		left: 10%;
-	}
-	#img2{
-		width: auto;
-		height: 80%;
-		top: 10%;
-		left: 38%;
-		display: block;
-		position: absolute;
-	}
-	@keyframes img1{
-	0%{opacity: 0.0;}
-	50%{transform: translateX(-3%) translateY(-2%);}
-	100%{transform: translateX(0%); opacity: 1;}
-	}
-	@keyframes img2{
-		0%{opacity: 0.0;}
-		50%{transform: translateX(3%) translateY(2%);}
-		100%{transform: translateX(0%); opacity: 1;}
-	}
-	.sidenav a{
-		font-size: 20px;
-	}
-	.closebtn{
-		font-size: 35px;
-		left: -10%;
-	}
-}
 #hmbttn{
 	max-height: 50px;
 	margin-bottom: 30%;
 	margin-left: 70%;
 }
+
+	/* IPAD SIZE */
+
+	@media only screen and (max-width: 1400px) {
+		body{
+			overflow: hidden;
+		}
+		h1{
+			font-size: 6vw;
+			
+		}
+		.text{
+			font-size: 20px;
+			color: pink;
+			top: 40%;
+			left: 5%;
+		}
+		#intro{
+		}
+		#img{	
+		}
+		#img1{
+		}
+		#img2{
+		}
+		.closebtn{
+			font-size: 40px;
+			left: -10%;
+		}
+	}
+
+	/* CELLPHONE SIZE */
+	
+	@media only screen and (max-width: 500px) {
+		body{
+			overflow: hidden;
+		}
+		h1{
+			text-align: center;
+			top: 15%;
+			font-size: 10vw;
+			left: 3%;
+		}
+		.sidenav{
+			height: 90%;
+		}
+		#welc{
+			top: 0%;
+			line-height: 4;
+		}
+		.text{
+			text-align: center;
+			font-size: 10px;
+			top: 30%;
+			left: 5%;
+			width: 90%;
+			color: black;
+			line-height: 2;
+		}
+		#intro{
+			margin-top: -5%;
+		}
+		#img{
+			position: absolute;
+			top: 60%;
+			left: 15%;
+			width: 90%;
+			height: 35%;
+		}
+		#img1{
+			width: auto;
+			height: 80%;
+			display: block;
+			position: absolute;
+			top: -10%;
+			left: 10%;
+		}
+		#img2{
+			width: auto;
+			height: 80%;
+			top: 10%;
+			left: 38%;
+			display: block;
+			position: absolute;
+		}
+		@keyframes img1{
+		0%{opacity: 0.0;}
+		50%{transform: translateX(-3%) translateY(-2%);}
+		100%{transform: translateX(0%); opacity: 1;}
+		}
+		@keyframes img2{
+			0%{opacity: 0.0;}
+			50%{transform: translateX(3%) translateY(2%);}
+			100%{transform: translateX(0%); opacity: 1;}
+		}
+		.sidenav a{
+			font-size: 20px;
+		}
+		.closebtn{
+			font-size: 35px;
+			left: -10%;
+		}
+	}
