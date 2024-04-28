@@ -83,6 +83,15 @@ function myFunction() {
     }
   }
 }
+
+window.addEventListener("orientationchange", function(){
+	if(window.matchMedia("(orientation:portrait)").matches){
+		alert("This Page is best viewed in landscape mode. Exception: Mobile Phones");
+	}
+	if(window.matchMedia("(orientation:landscape)").matches){
+	}
+}, false);
+
 </script>
 
 </body>
