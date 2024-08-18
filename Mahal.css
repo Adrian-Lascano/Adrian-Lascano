@@ -53,7 +53,6 @@ body{
   border-radius: 5px;
   overflow-y: auto;
 }
-
 ::-webkit-scrollbar{
   width: 0.7vw;
 }
@@ -71,7 +70,6 @@ body{
 ::-webkit-scrollbar-thumb:hover{
   background: #68d2d4; 
 }
-
 #myMenu{
 	text-decoration: none;
 	list-style-type: none;
@@ -111,7 +109,7 @@ body{
 	text-shadow: 2px 2px 8px grey;
 }
 a:hover{
-	color: #d4d4d4;
+	color: #424242;
 }
 #hmbttn{
 	max-height: 50px;
@@ -153,17 +151,16 @@ h1{
 	font-size: 2vw;
 	animation: h1 2s ease forwards;
 }
-#space{
-	margin-top: -2.5%;
-	font-weight: 500;
-	color: #1a1a1a;
-	animation: h1 3s ease forwards;
-}
-@keyframes space{
+@keyframes Mlyrics{
 	0%{transform: translateY(-10%); color: transparent; text-shadow: none;}
 	20%{color: transparent; text-shadow: none;}
 	45%{letter-spacing: -0.1px;}
 	100%{transform: translateY(1%);}
+}
+#space{
+	margin-top: -2.5%;
+	font-weight: 500;
+	color: #1a1a1a;
 }
 #indicator{
 	color: white;
@@ -212,56 +209,3 @@ h1{
 	50%{transform: translateX(5%) translateY(3%);}
 	100%{transform: translateX(0%);}
 }
-
-/* CELLPHONE SIZE */
-
-	@media only screen and (max-width: 500px){
-		body{}
-		.sidenav{
-			height: 90%;
-		}
-		#img1{
-			width: 0%;
-			height: 0%;
-			left: -500%;
-		}
-		#img2{
-			width: 0%;
-			height: 0%;
-			top: -100%;
-			left: 500%;
-		}
-		h1{
-			color: white;
-			text-shadow: 3px 3px 1px #21ad99;
-			font-size: 8vw;
-			position: absolute;
-			float: left;
-			left: 25%;
-			top: 7%;
-			animation-duration: 2.5s;
-			animation: h1 1.5s ease forwards;
-		}
-		#by{
-			color: white;
-			text-shadow: 1px 1px 1px black;
-			font-size: 3vw;
-			position: absolute;
-			float: left;
-			top: 100px;
-			left: 43%;
-			animation: h1 2s ease forwards;
-		}
-		#Mlyrics{
-			width: 90%;
-			margin-left: 1%;
-			margin-top: -15%;
-			text-align: justify;
-			font-size: 3.1vw;
-			animation: h1 2s ease forwards;
-		}
-		.closebtn{
-			font-size: 35px;
-			left: -10%;
-		}
-	}
