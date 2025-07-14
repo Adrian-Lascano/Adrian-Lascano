@@ -3,11 +3,11 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>AGA's Song Compositions</title>
-	<link rel="stylesheet" type="text/css" href="song.css">
+	<link rel="stylesheet" type="text/css" href="Mahal.css">
+	<title>Mahal Kita</title>
 </head>
 <body>
-
+	
 <nav id="navigation" class="sidenav">
 	<a href="javascript:void(0)" class="closebtn" onclick="closeNav()" style="font-size: 45px;"><b>&times;</b></a>
 	<input type="text" id="mySearch" onkeyup="myFunction()" placeholder="Search.." title="Type in a category">
@@ -37,19 +37,69 @@
  	<a><span id="2nav" style="cursor:pointer" onclick="openNav()">Songs</span></a>
  	<a href="Composer.html" id="first">Composer</a>
  	<a href="Dedication.html" id="first">Dedication</a>
-  	<br>
-  	</b>
-  	</p>
+  </b>
+ 	</p>
 </div><br><br><br><br><br>
 
-	<h1><b>AGA's<br>Compositions</b></h1>
-	<div class="text">
-	<p id="welc">WELCOME!</p>
-	<p id="intro">These are my works made by me, Adrian Lascano.
-	<br> It is a pleasure to have you visiting my website.</p>
+	<div>
+		<h1>Mahal Kita</h1><p id="by">by: Adrian Lascano</p>
 	</div>
 
-	<div id="img"><img src="guitar.jpg" id="img1"><img src="Adrian.jpg" id="img2"></div>
+			<div id="img"><img src="guitar.jpg" id="img1"><img src="Adrian.jpg" id="img2"></div>
+
+	<div>
+		<div id="Mlyrics">
+<p id="space">
+She said something that I won't forget<br>
+So small to be a lawyer, do you get it<br>
+Her hobbies are painting baking reading<br>
+Not just a girl but wife for life<br>
+<br>
+You can call me AGA short for my first names<br>
+I want to be your friend, wait it's not the end<br>
+I can cook, I can sing you everyday<br>
+Even wrote you this a song to play<br>
+<br>
+This is something I want to live about<br>
+I just want to make my papa proud<br>
+And if you are not saying yes to this<br>
+You got no choice, you’re into this<br>
+Samantha it is<br>
+<br>
+I'm sorry for thinking all these things<br>
+I just want us to have some kinds of this<br>
+A perfect life, husband wife and kids<br>
+Nothing more but wife for life<br>
+<br>
+This is something I want to live about<br>
+I just want to make my papa proud<br>
+And if you are not saying yes to this<br>
+You got no choice, you’re into this<br>
+<br>
+I wake up everyday<br>
+And I think of all the ways, is it possible to ask you out<br>
+I think I found a way<br>
+This would be a special way, letting all my feelings out<br>
+<br>
+There is a problem with me<br>
+‘Cuz you know, I want you all for me<br>
+I may not be the first, the second, or the third<br>
+But remember this, “I’ll be your final kiss”<br>
+<br>
+This is something I want to live about<br>
+Something that would make my papa proud<br>
+And I just heard you whispered yes to this<br>
+I have no choice<br>
+I wanna love you like this<br>
+<br>
+I’m gonna kiss you like this<br>
+<br>
+Samantha it is
+
+</p>
+
+		</div>
+	</div>
 
 <script>
 
@@ -70,31 +120,6 @@ function myFunction() {
     x.className = "topnav";
   }
 }
-
-function myFunction() {
-  var input, filter, ul, li, a, i;
-  input = document.getElementById("mySearch");
-  filter = input.value.toUpperCase();
-  ul = document.getElementById("myMenu");
-  li = ul.getElementsByTagName("li");
-  for (i = 0; i < li.length; i++) {
-    a = li[i].getElementsByTagName("a")[0];
-    if (a.innerHTML.toUpperCase().indexOf(filter) > -1) {
-      li[i].style.display = "";
-    } else {
-      li[i].style.display = "none";
-    }
-  }
-}
-
-window.addEventListener("orientationchange", function(){
-	if(window.matchMedia("(orientation:portrait)").matches){
-		alert("This Page is best viewed in landscape mode. Exception: Mobile Phones");
-	}
-	if(window.matchMedia("(orientation:landscape)").matches){
-	}
-}, false);
-
 </script>
 
 </body>
